@@ -1,6 +1,6 @@
 ### miniMeta - Web application to run meta-analyses
 
-miniMeta is a [shiny](https://shiny.rstudio.com/) web application 
+miniMeta is a [shiny](https://shiny.posit.co/) web application 
 that makes it easy to run meta-analyses, without having _any_ familiarity 
 with R. It is essentially a graphical front-end for R package 
 [meta](https://CRAN.R-project.org/package=meta) by Guido Schwarzer. 
@@ -42,8 +42,4 @@ Just open R, load the miniMeta package and launch:
 
 A browser window will open, and you can use miniMeta.
 
-If you want to have a quick look at how it works, try running it from these servers:
-
-* https://thlytras.shinyapps.io/minimeta/
-* http://aspirin.ddns.net/shiny/miniMeta/
-
+If you want to have a quick look at how it works, try running it on [shinyapps.io](https://thlytras.shinyapps.io/minimeta/).

@@ -10,14 +10,14 @@
 #' @return A named list of arguments, or an object of class "try-error" on failure.
 #'
 #' @examples
-#' parseArguments('col.diamond="red", sm="RR", comb.fixed=FALSE')
+#' parseArguments('col.diamond="red", sm="RR", common=FALSE')
 #'
 #' @export
 parseArguments <- function(x) {
   getArgs <- function(...) return(list(...))
   x <- gsub(";|\n", "", x)
   res <- try(eval(parse(text=sprintf("getArgs(%s)", x))), silent=TRUE)
-  if (class(res)=="try-error") {
+  if (inherits(res, "try-error")) {
     return(res)
   }
   if (length(res)>0 && (is.null(names(res)) || (sum(names(res)=="")>0))) {
